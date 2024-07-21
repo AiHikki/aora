@@ -50,7 +50,7 @@ const SignUp = () => {
           </Text>
 
           <FormField
-            title="Email"
+            title="Username"
             value={form.username}
             handleChangeText={(e) => setForm({ ...form, username: e })}
             otherStyles="mt-7"

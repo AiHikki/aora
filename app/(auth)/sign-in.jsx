@@ -4,7 +4,7 @@ import CustomButton from "../../components/CustomButton";
 import FormField from "../../components/FormField";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import { getCurrentUser, signIn } from "../../lib/appwrite";
 import { useGlobalContext } from "../../context/GlobalProvider";
 
@@ -27,9 +27,6 @@ const SignIn = () => {
       const result = await getCurrentUser();
       setUser(result);
       setIsLoggedIn(true);
-
-      //! set it to global state...
-
       router.replace("/home");
     } catch (error) {
       Alert.alert("Error", error.message);
