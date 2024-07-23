@@ -17,7 +17,7 @@ const FormField = ({
     <View className={clsx("space-y-2", otherStyles)}>
       <Text className="text-gray-100 text-base font-pmedium">{title}</Text>
 
-      <View className="bg-black-100 border-black-200 border-[1px] h-[58px] w-full px-4 rounded-xl focus:border-secondary items-center flex-row">
+      <View className="bg-black-100 border-black-200 border h-[58px] w-full px-4 rounded-xl focus:border-secondary items-center flex-row">
         <TextInput
           className=" flex-1 text-white text-base  font-psemibold placeholder:font-pregular"
           onChangeText={handleChangeText}
